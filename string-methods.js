@@ -13,13 +13,18 @@ console.log(word.length);
 const fruit = "Banaan";
 const vegetable = "Aardappel";
 
+const checkWords = fruit.length > vegetable.length;
 
+console.log(checkWords);
 
 /* Opdracht 2 */
 //  Zorg ervoor dat de laatste letter van het woord in fruit en vegetable (hierboven) in de terminal gelogd wordt.
 //  Tip: bedenk 1 manier die voor beide woorden zou werken.
 // ---- Verwachte uitkomst voor fruit: "n"
 // ---- Verwachte uitkomst voor vegetable: "l"
+
+console.log(fruit.charAt(fruit.length-1), vegetable.charAt(vegetable.length-1));
+
 
 
 
@@ -29,7 +34,7 @@ const vegetable = "Aardappel";
 
 const userInput = "  De kat krabt de krullen van de trap ";
 
-
+console.log(userInput.trim());
 
 /* Opdracht 4 */
 // Check of het woord "Fantastisch" in onderstaande zin voorkomt en log dit in de terminal.
@@ -37,13 +42,13 @@ const userInput = "  De kat krabt de krullen van de trap ";
 
 const story = "We vinden de behaalde resultaten werkelijk prachtig. Fantastisch, nietwaar?"
 
-
+console.log(story.includes("Fantastisch"));
 
 /* Opdracht 5 */
 // Knip de vraag van bovenstaande tekst (story) af, zodat alleen het eerste gedeelte overblijft en log dit in de terminal.
 // ---- Verwachte uitkomst: "We vinden de behaalde resultaten werkelijk prachtig."
 
-
+console.log(story.substring(0,52));
 
 /* Opdracht 6 */
 // Maak van onderstaand bedrag een Nederlands bedrag door het volgende te doen:
@@ -54,6 +59,9 @@ const story = "We vinden de behaalde resultaten werkelijk prachtig. Fantastisch,
 
 const price = "$35.59";
 
+const euroPrice = price.replace("$", "€").replace(".",",");
+
+console.log(euroPrice);
 
 
 
